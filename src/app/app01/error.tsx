@@ -1,0 +1,14 @@
+'use client'
+
+export default function Error({error}:{error:Error}) {
+  return (
+    <div className="w-full h-screen flex justify-center items-center flex flex-col">
+      <h1 className="text-2xl font-bold p-5">
+        페이지 에러 ⚠
+      </h1>
+      <p className="text-blue-500">
+        오류메시지 : {error.message}
+      </p>
+    </div>
+  );
+}
