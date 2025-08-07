@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 
 interface TailcardProps {
   imgurl : string, 
@@ -11,7 +12,7 @@ interface TailcardProps {
 export default function TailCard({imgurl, title, subtitle, content} : TailcardProps ) {
   let tag : ReactNode ;
   if (content.includes(',')) {
-    let tagTm = content.split(',').map(item => <span key={item} 
+    const tagTm = content.split(',').map(item => <span key={item} 
                           className="bg-gray-100 inline-flex p-1 m-1 rounded">
                           {item}
                           </span>);
@@ -28,7 +29,7 @@ export default function TailCard({imgurl, title, subtitle, content} : TailcardPr
                     rounded-lg shadow-sm">
  
      {imgurl && <div className="w-full h-48">
-      <img className="w-full h-full rounded-t-lg object-cover" 
+      <Image className="w-full h-full rounded-t-lg object-cover" 
             src={imgurl} alt={title} />
       </div> } 
       <div className="p-5 flex flex-col justify-start items-start">

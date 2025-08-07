@@ -22,7 +22,7 @@ export default function TailButton({caption, color, onHandle} : TailButtonProps)
     "lime" : "hover:bg-lime-400"
   }
   return (
-    <button className={`p-4 rounded-xl m-4 text-white 
+    <button className={`p-4 rounded-xl m-4 text-white font-bold
                       flex items-center justify-center
                        hover:cursor-pointer hover:font-bold  h-10
                        
