@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function ProductList() {
   return (
    <div className="w-full h-screen flex justify-center items-center flex flex-col">
-      <h1 className="text-2xl font-bold p-5">
+      <h1 className="text-2xl text-gray-800 font-bold p-5">
         상품목록
       </h1>
       <p className="text-black">

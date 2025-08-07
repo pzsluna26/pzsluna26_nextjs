@@ -14,18 +14,18 @@ export default async function ProductDetail({
  const p = products.filter((item : Product) => item.id == id)[0];
  return (
     <div className="w-full h-screen flex justify-center items-center flex flex-col">
-      <h1 className="text-2xl font-bold p-5">
+      <h1 className="text-2xl font-bold text-gray-700  p-5">
         상품상세정보
       </h1>
-      <ul className="border border-gray-300 rounded-xl p-5">
+      <ul className="border border-gray-300 text-gray-700 rounded-xl p-5">
         <li>{p.id}</li>
         <li>{p.name}</li>
         <li>{p.category}</li>
         <li>{p.price}</li>
         <li>{p.description}</li>
       </ul>
-      <div className="mt-5 ml-50">
-        <Link href = "/productList">🔻</Link> 
+      <div className="mt-5">
+        <Link href = "/productList" className="text-gray-700">이전으로</Link> 
       </div>
     </div>
   );

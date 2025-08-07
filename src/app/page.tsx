@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div>
       {login ? (
-        <div className="w-full mt-70 flex justify-center items-center">{id} 님 로그인이 되었습니다☺️</div>
+        <div className="text-black w-full mt-70 flex justify-center items-center">{id} 님 로그인이 되었습니다☺️</div>
       ) : ( 
        <Login />
       )}

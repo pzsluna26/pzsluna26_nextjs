@@ -44,7 +44,7 @@ export default function SubwayBox({ data, idx }: SubwayBoxProps) {
                 {scode[key].name}<br />
                 ({key})
               </div>
-              <div className='text-center '>
+              <div className='text-center'>
                 {data[key] !== undefined ? `${data[key]}${scode[key].unit}` : '데이터 없음'}
               </div>
             </div>
