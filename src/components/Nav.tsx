@@ -40,12 +40,11 @@ export default function Nav() {
             <ul className="flex justify-center items-center">
               <Link href = "/"><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">홈으로</li></Link>
              
-             {login && <Link href ='/MyClock'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">시계</li></Link>}
-             {login && <Link href ='/Lotto'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">로또</li></Link>}
-             {login && <Link href ='/FoodMain'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">푸드</li></Link>}
-             {login && <Link href = "/Subway"><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">지하철 대기정보</li></Link>}
-             {login && <Link href ='/TodoList'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">할 일 목록</li></Link>}
-             {login && <Link href ='/Rest'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">Rest</li></Link>}
+             {login && <Link href ='/myClock'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">시계</li></Link>}
+             {login && <Link href ='/lotto'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">로또</li></Link>}
+             {login && <Link href ='/foodMain'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">푸드</li></Link>}
+             {login && <Link href = "/subway"><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">지하철 대기정보</li></Link>}
+             {login && <Link href ='/todoList'><li className="px-2 hover:bg-amber-100 rounded-xl hover:text-black">할 일 목록</li></Link>}
             </ul>
           </div>
           <div className="mr-10 text-xs font-bold p-4 bg-blue-300 text-white rounded-xl">
